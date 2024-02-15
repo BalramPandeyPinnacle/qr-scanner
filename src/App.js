@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import HowToUse from './HowToUse.jsx';
 import Html5QrcodePlugin from './Html5QrcodePlugin.jsx';
 import ResultContainerPlugin from './ResultContainerPlugin.jsx';
 
@@ -25,7 +24,6 @@ const App = (props) => {
                     qrCodeSuccessCallback={onNewScanResult}
                 />
                 <ResultContainerPlugin results={decodedResults} />
-                <HowToUse />
             </section>
         </div>
     );
